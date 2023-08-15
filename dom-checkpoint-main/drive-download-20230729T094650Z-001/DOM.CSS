@@ -1,0 +1,290 @@
+*,
+::after,
+::before,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #555555;
+}
+
+a {
+  text-decoration: none;
+  color: #7cc576;
+}
+
+a:hover {
+  color: #9ed49a;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+#header {
+  height: 90px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0 4px 10px -3px hsla(0, 0%, 75%, 0.5);
+}
+
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+/* ================hero=================   */
+#hero {
+  width: 101%;
+  height: 100vh;
+  background: url("hero.png");
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+
+  padding: 0 15px;
+  margin-right: 0 20px;
+}
+#hero .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 3px;
+  margin: 10px;
+  color: #fff;
+  background: #7cc576;
+}
+
+#hero .btn-get-started:hover {
+  transition: 0.5s;
+  background: #fff;
+  color: #7cc576;
+}
+#hero h1 {
+  margin: 0 0 30px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #fff;
+}
+/* ============about================= */
+#about {
+  display: flex;
+}
+
+#about,
+h1 {
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#about,
+h2 {
+  color: rgb(4, 81, 22);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#about,
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    line-height: 22px;
+  }
+}
+/* =======================navbar============= */
+css body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 90%;
+}
+
+nav h1 {
+  margin: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+}
+.navbar a:hover {
+  color: #c8bcbc;
+}
+/* ==============boutique=========== */
+#boutique {
+  background-color: #dfdcdc;
+}
+/* =============================contact===================================== */
+#contact {
+  background-color: wheat;
+}
+.card {
+  width: 350px;
+  height: 350px;
+  color: rgb(208, 40, 99);
+  box-shadow: 10px -10px 20px 0px rgba(143, 64, 248, 0.25),
+    -10px 10px 20px 0px rgba(39, 200, 255, 0.5);
+  margin: 0 30px 0 30px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 300ms ease;
+  background-color: white;
+}
+
+/* panier */
+.panier {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+}
+/* panier header */
+.panier-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+/* elements panier */
+.panier-elements {
+  max-height: calc(100vh - 247px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* element panier */
+.panier-element {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.panier-element div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(233, 228, 194, 0.843);
+}
+/* info element */
+.panier-element .element-info {
+  flex: 1;
+
+  border-radius: 0 10px 10px 0;
+
+  padding: 10px;
+}
+/* .panier-element .element-info:hover {
+        background-color: rgba(0, 255, 229, 0.903);
+        cursor: pointer;
+      } */
+
+/* unit prix*/
+.panier-element .unit-prix {
+  flex: 1;
+  font-size: 1.2rem;
+}
+/* nombre */
+.panier-element .units {
+  flex: 1;
+}
+.panier-element .units .number {
+  margin: 0 10px;
+
+  font-size: 1.2rem;
+}
+.panier-element .units .btn {
+  width: 15px;
+  height: 15px;
+
+  background-color: rgb(242, 255, 58);
+
+  border-radius: 50%;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* panier footer */
+.panier-footer {
+  width: 100%;
+  background-color: rgb(255, 21, 21);
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+
+  border-left: 1px solid rgb(var(--right-side-bg-color));
+}
+.panier-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 0;
+
+  font-size: 1.3rem;
+}
+.panier-footer .subtotal {
+  background-color: rgb(221, 211, 211);
+}
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
+}
